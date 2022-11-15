@@ -39,6 +39,7 @@ namespace Game.SoundSystem.Editor
 
             useConstant.boolValue = result == 0;
 
+            position.yMax -= 2;
             EditorGUI.PropertyField(position,
                 useConstant.boolValue ? clip : data,
                 GUIContent.none);
