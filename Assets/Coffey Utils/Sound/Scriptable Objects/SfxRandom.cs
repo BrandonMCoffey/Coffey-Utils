@@ -9,7 +9,7 @@ namespace Game.SoundSystem
     public class SfxRandom : SfxBase
     {
         [Header("Audio Clips")]
-        [SerializeField] private List<SfxReference> _clips = new List<SfxReference>();
+        [SerializeField] private List<SfxReference> _clips = new List<SfxReference> {new SfxReference(true)};
         [SerializeField] private AudioMixerGroup _mixerGroup;
 
         [Header("Volume Settings")]
